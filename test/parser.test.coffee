@@ -1,5 +1,5 @@
 expect = require('chai').expect
-parse = require('../parsers/selector').parse
+parse = require('../index')
 
 describe 'selector parse', ->
   it 'button', ->
