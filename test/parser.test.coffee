@@ -81,11 +81,10 @@ describe 'selector parse', ->
                   { type: 'typeSelector', typeSelector: 'input' }
                   {
                     type: 'attributeSelector'
-                    attributeSelector:
-                      namespace: null
-                      attribute: 'type'
-                      operator: '='
-                      value: 'text'
+                    attributeSelector: 'type'
+                    namespace: null
+                    operator: '='
+                    value: 'text'
                   }
                 ]
               }
@@ -110,9 +109,8 @@ describe 'selector parse', ->
                   { type: 'typeSelector', typeSelector: 'a' }
                   {
                     type: 'pseudoSelector'
-                    pseudoSelector:
-                      pseudo: ':hover'
-                      arguments: null
+                    pseudoSelector: ':hover'
+                    arguments: null
                   }
                 ]
               }
@@ -137,8 +135,7 @@ describe 'selector parse', ->
                   { type: 'typeSelector', typeSelector: 'article' }
                   {
                     type: 'pseudoSelector'
-                    pseudoSelector:
-                      pseudo: ':any'
+                    pseudoSelector: ':any'
                   }
                 ]
               }

@@ -58,12 +58,10 @@ attributeSelector
     {
       return {
         type: 'attributeSelector',
-        attributeSelector: {
-          namespace: ns,
-          attribute: id,
-          operator: op,
-          value: value
-        }
+        attributeSelector: id,
+        namespace: ns,
+        operator: op,
+        value: value
       };
     }
 
@@ -84,10 +82,8 @@ pseudoSelector
     {
       return {
         type: 'pseudoSelector',
-        pseudoSelector: {
-          pseudo: pseudo.join(''),
-          arguments: args
-        }
+        pseudoSelector: pseudo.join(''),
+        arguments: args
       };
     }
 
