@@ -8,7 +8,7 @@ Install
 -------
 
 ```
-$ npm install
+$ npm install nyamadori/css-selector-parser
 ```
 
 Usage
